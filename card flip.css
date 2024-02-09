@@ -1,0 +1,77 @@
+
+.box_container{
+    height: 250px;
+    width: 450px;
+    transform-style:preserve-3d ;
+    transition: transform 1s;
+   /* backface-visibility: hidden;*/
+}
+.box{
+    height: 250px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box_front{
+    position: absolute;
+    height: 250px;
+    width: 450px;
+    border-radius: 30px;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgb(89, 86, 86);
+    backface-visibility: hidden;
+    
+}
+.box_back{
+    position: absolute;
+    height: 250px;
+    width: 450px;
+    border-radius: 30px;
+    /*background-color: rgb(66, 73, 79);*/
+    background-size: cover;
+    background-image: url(download.jpeg);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    opacity: 70%;
+    box-shadow: 5px 5px 10px rgb(89, 86, 86);
+    color: aliceblue;
+}
+.box:hover .box_container{
+    transform: rotateY(-180deg);
+
+}
+.longchip{
+    height: 50px;
+    width: 450px;
+    background-color: rgb(0, 0, 0);
+    background:repeating-linear-gradient(#000,
+    #f000 3px,
+    #777575 3px,
+    #000 9px
+    );
+}
+.slongchip{
+    height: 40px;
+    width: 370px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: rgb(214, 218, 222);
+    border-radius: 5px;
+    color: brown;
+    
+}
+.cvc{
+    margin-left: 340px;
+}
+p{
+    margin-left: 20px;
+    margin-right: 10px;
+   margin-top: 20px;
+}
+.cno{
+    margin-left: 10px;
+    color: #dad8d8;
+}
